@@ -17,7 +17,7 @@ def all_tasks():
 
     for a in task.find():
 
-        output.append({'task_title':a['task_title'],'task_description': a['task_description'],'task_done': a['task_done']})
+        output.append({'task_id':a['task_id'],'task_title':a['task_title'],'task_description': a['task_description'],'task_done': a['task_done']})
 
     return jsonify({'result':output})
 
